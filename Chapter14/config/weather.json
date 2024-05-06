@@ -1,0 +1,22 @@
+{
+	"icon": {
+		"01d" : ":sunny:",
+		"01n" : ":first_quarter_moon_with_face:",
+		"02d" : ":white_sun_small_cloud:",
+		"02n" : ":white_sun_small_cloud:",
+		"03d" : ":white_sun_cloud:",
+		"03n" : ":white_sun_cloud:",
+		"04d" : ":cloud:",
+		"04n" : ":cloud:",
+		"09d" : ":cloud_rain:",
+		"09n" : ":cloud_rain:",
+		"10d" : ":white_sun_rain_cloud:",
+		"10n" : ":white_sun_rain_cloud:",
+		"11d" : ":thunder_cloud_rain:",
+		"11n" : ":thunder_cloud_rain:",
+		"13d" : ":cloud_snow:",
+		"13n" : ":cloud_snow:",
+		"50d" : ":foggy:",
+		"50n" : ":foggy:"
+	}
+}
