@@ -1,0 +1,8 @@
+pipelines:
+   default:
+      - step:
+          script:
+             - git add <changed files>
+             - git commit -m "[skip ci] Updates added via Bitbucket Pipelines deploy"
+             - git tag -am "Tag for release ${BITBUCKET_BUILD_NUMBER}" release-${BITBUCKET_BUILD_NUMBER}
+             - git push

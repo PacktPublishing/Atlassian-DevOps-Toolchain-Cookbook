@@ -1,0 +1,4 @@
+script:
+  - mvn install
+  - npm install -g snyk # binary download also available
+  - snyk test --all-projects

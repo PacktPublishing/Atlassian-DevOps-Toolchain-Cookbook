@@ -1,0 +1,10 @@
+script:
+  - pipe: atlassian/scp-deploy:1.5.0
+    variables:
+      USER: 'ec2-user'
+      SERVER: '127.0.0.1'
+      REMOTE_PATH: '/var/www/build/'
+      LOCAL_PATH: 'build'
+      SSH_KEY: $MY_SSH_KEY
+      DEBUG: 'true'
+      EXTRA_ARGS: ['-o', 'ServerAliveInterval=10']

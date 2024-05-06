@@ -1,0 +1,17 @@
+pipelines:
+  pull-requests:
+    feature/*:
+      - step:
+          name: Build for pull request to feature branch
+          script:
+            - echo "feature branch PR!"
+    hotfix/*:
+      - step:
+          name: Build for pull request to hotfix branch
+          script:
+            - echo "hotfix PR!"
+    '**':
+      - step:
+          name: Build for all pull requests to other branches
+          script:
+            - echo "all other non-feature, non-hotfix pull request!"

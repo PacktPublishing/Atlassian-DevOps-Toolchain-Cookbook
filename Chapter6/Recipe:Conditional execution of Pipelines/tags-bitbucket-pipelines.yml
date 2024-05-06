@@ -1,0 +1,17 @@
+pipelines:
+  tags:
+    '*-windows':
+      - step:
+          name: Build for *-windows tags
+          script:
+            - echo "Windows tag!"
+    '*-macos':
+      - step:
+          name: Build for *-macos tags
+          script:
+            - echo "macOS tag!"
+    '*-linux':
+      - step:
+          name: Build for *-linux tags
+          script:
+            - echo "Linux tag!"

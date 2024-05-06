@@ -1,0 +1,9 @@
+- step:
+   name: Deploy
+   deployment: production
+   script:
+      -pipe: atlassian/kubectl-run:1.1.2
+        variables:
+           KUBE_CONFIG: $KUBE_CONFIG
+           KUBECTL_COMMAND: 'apply'
+           RESOURCE_PATH: deployment.yml

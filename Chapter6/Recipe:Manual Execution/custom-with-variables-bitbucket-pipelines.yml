@@ -1,0 +1,17 @@
+pipelines:
+  custom: # Pipelines that are triggered manually
+    us-build: # The name that is displayed in the list in the Bitbucket Cloud GUI
+      - variables:
+          - name: Username
+          - name: IAMRole
+            default: "admin"          # optionally provide a default variable value
+            description: "Add user role"
+          - name: Region
+            default: "us-east-1"
+            allowed-values:           # optionally restrict variable values
+              - "ap-southeast-2"
+              - "us-east-1"
+              - "us-west-2"
+      - step:
+          script:
+            - echo "$Username manually triggered for a build for $Region as $IAMRole!"

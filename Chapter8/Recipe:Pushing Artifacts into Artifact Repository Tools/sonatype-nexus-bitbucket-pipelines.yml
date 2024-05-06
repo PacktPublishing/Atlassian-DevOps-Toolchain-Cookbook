@@ -1,0 +1,13 @@
+    - step:
+        # set NEXUS_USERNAME and NEXUS_PASSWORD as environment variables
+        name: Deploy to Nexus Repository Manager
+        deployment: test   # set to test, staging or production
+        # trigger: manual  # uncomment to have a manual step
+        script:
+          - pipe: sonatype/nexus-repository-publish:0.0.1
+            variables:
+              FILENAME: 'target/myapp-1.0-SNAPSHOT.jar'
+              ATTRIBUTES: '-CgroupId=com.example -CartifactId=myapp -Cversion=1.0 -Aextension=jar'
+              USERNAME: '$NEXUS_USERNAME'
+              PASSWORD: '$NEXUS_PASSWORD'
+              SERVER_URL: 'https://nexus.example.com/'

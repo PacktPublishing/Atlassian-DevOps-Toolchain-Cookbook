@@ -1,0 +1,17 @@
+image: python:2.7
+  pipelines:
+   default:
+    - step:
+        name: Install
+        script: # Modify the commands below to build your repository.
+            - pip install ansible-tower-cli
+
+    - step:
+        name: Execute
+        script:
+            - hostval=$(tower-cli config host $host)
+            - userval=$(tower-cli config username $username)
+            - passwordval=$(tower-cli config password $password)
+            - tower-cli config verify_ssl false
+            - tower-cli job launch --job-template $ID --monitor
+        

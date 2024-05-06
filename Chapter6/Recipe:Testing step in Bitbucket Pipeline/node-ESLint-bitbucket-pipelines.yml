@@ -1,0 +1,14 @@
+image: node:10.15.0
+pipelines:
+  default:
+    - step:
+        name: ESLint
+        script: 
+          - npm install eslint --save-dev
+          - eslint --init
+    - step:
+        name: execute
+        script:
+          - npm install
+          - npm run lint
+          - npm test

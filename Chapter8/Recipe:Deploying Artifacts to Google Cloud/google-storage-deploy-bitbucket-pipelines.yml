@@ -1,0 +1,6 @@
+script:
+  - pipe: atlassian/google-cloud-storage-deploy:2.0.0
+    variables:
+      KEY_FILE: $KEY_FILE
+      BUCKET: 'my-bucket'
+      SOURCE: 'myApp.jar'

@@ -1,0 +1,9 @@
+script:
+   - pipe: jfrog/jfrog-setup-cli:2.0.0
+   - source ./jfrog-setup-cli.sh
+   # Upload artifacts to Artifactory
+   - jf rt u file artifacts/
+   # Collect environment variables
+   - jf rt bce
+   # Publish build info
+   - jf rt bp

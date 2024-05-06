@@ -1,0 +1,15 @@
+pipelines:
+  custom: # Pipelines that are triggered manually
+    manual-sonar: # The name that is displayed in the list in the Bitbucket Cloud GUI
+      - step:
+          script:
+            - echo "triggering for Sonar!"
+    deployment-to-prod: # Another display name
+      - step:
+          script:
+            - echo "triggering for manual deployments to prod!"
+  branches:  # Pipelines that run automatically on a commit to a branch
+    staging:
+      - step:
+          script:
+            - echo "Auto execute for push to staging branch."

@@ -1,0 +1,7 @@
+-step:
+   name: Deploy to Kubernetes
+   image: atlassian/pipelines-kubectl
+   script:
+      - echo $KUBECONFIG | base64 -d > kubeconfig.yml
+      # Run deployment command using kubectl
+      - kubectl --kubeconfig=kubeconfig.yml apply -f deployment.yml

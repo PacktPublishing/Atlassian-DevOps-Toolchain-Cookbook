@@ -1,0 +1,5 @@
+script:
+  - pipe: atlassian/bitbucket-upload-file:0.7.1
+    variables:
+      BITBUCKET_ACCESS_TOKEN: $BITBUCKET_ACCESS_TOKEN
+      FILENAME: 'package.json'

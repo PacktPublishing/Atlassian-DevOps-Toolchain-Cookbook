@@ -1,0 +1,10 @@
+image: mcr.microsoft.com/dotnet/sdk
+
+pipelines:
+  default:
+    - step:
+        script:
+          - dotnet tool install -g trx2junit
+          - dotnet test --logger 'trx;LogFileName=log.trx'          
+        after-script:
+          - export PATH="$PATH:/root/.dotnet/tools"

@@ -1,0 +1,11 @@
+- step:
+   name: Build
+   script:
+      # Build the Docker image (assumes the Dockerfile is at the root level of the repository)
+      - docker build -t $IMAGE_NAME .
+      # Authenticate with the Docker registry (this example is Docker Hub)
+      - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD
+      # Push the image to the Docker registry
+      - docker push $IMAGE_NAME
+   services:
+      - docker

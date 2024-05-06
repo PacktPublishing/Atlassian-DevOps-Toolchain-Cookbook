@@ -1,0 +1,15 @@
+- step:
+    name: 'First Automated Step'
+    script:
+      - echo "This step is automated"
+
+- step:
+    name: 'Manual Step'
+    trigger: manual
+    script: 
+      - echo "This step is manual"
+      
+- step:
+    name: 'Second Automated Step'
+    script:
+      - echo "This step is also automated"

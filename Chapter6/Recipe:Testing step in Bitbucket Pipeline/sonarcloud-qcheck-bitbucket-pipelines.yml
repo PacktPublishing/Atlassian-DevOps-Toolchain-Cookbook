@@ -1,0 +1,4 @@
+- pipe: sonarsource/sonarcloud-quality-gate:0.1.6
+  variables:
+    SONAR_TOKEN: $SONAR_TOKEN
+    SONAR_QUALITY_GATE_TIMEOUT: 180  # 3 minutes

@@ -1,0 +1,7 @@
+- step:
+    image: hashicorp/terraform:full
+    script:
+      - terraform init 
+      - terraform validate
+      - terraform plan -out=plantf
+      - terraform apply plantf

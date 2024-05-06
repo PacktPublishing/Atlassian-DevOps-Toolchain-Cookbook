@@ -1,0 +1,7 @@
+script:
+  - npm install
+  - npm test
+  - pipe: snyk/snyk-scan:1.0.1
+    variables:
+      SNYK_TOKEN: $SNYK_TOKEN
+      LANGUAGE: "node"
