@@ -59,9 +59,9 @@ With the following software and hardware list you can run all code files present
 | Connect with monitoring tools (Chapter 10) | Datadog account |
 
 ### Related products
-*  [[Modern DevOps Practices]](https://www.packtpub.com/en-in/product/modern-devops-practices-9781805121824?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1805121820)
+*  Modern DevOps Practices [[Packt]](https://www.packtpub.com/en-in/product/modern-devops-practices-9781805121824?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1805121820)
 
-*  [[The Ultimate Docker Container Book]](https://www.packtpub.com/en-in/product/the-ultimate-docker-container-book-9781804613986?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1804613983)
+*  The Ultimate Docker Container Book [[Packt]](https://www.packtpub.com/en-in/product/the-ultimate-docker-container-book-9781804613986?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1804613983)
 
 ## Get to Know the Author
 **Robert Wen**
